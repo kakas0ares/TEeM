@@ -1,0 +1,11 @@
+alunos = ["Ana", "Bruno", "Carlos", "Daniel"]
+
+try:
+    indice = int(input("Digite o índice do aluno: "))
+
+    if 0 <= indice < len(alunos):
+        print("Aluno:", alunos[indice])
+    else:
+        print("Erro: índice inexistente.")
+except ValueError:
+    print("Erro: digite um número inteiro.")
